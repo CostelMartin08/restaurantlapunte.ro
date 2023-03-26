@@ -1,2 +1,0 @@
-# restaurantlapunte.ro
-Meniu
