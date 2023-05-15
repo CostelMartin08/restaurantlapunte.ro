@@ -1,0 +1,21 @@
+.dark-mode {
+    background-color: rgb(22, 21, 21);
+}
+
+.dark-mode h1, .dark-mode h5
+ {
+    color: rgb(255, 255, 255);
+}
+
+.dark-mode .sticky {
+
+    background-color: #D21312;
+}
+
+.dark-mode .card-contact {
+    border-radius: 20px;
+    background: #e0e0e0;
+    box-shadow: 15px 15px 30px #272525,
+        -15px -15px 30px #0c0b0b;
+
+}
