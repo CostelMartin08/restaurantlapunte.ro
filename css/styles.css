@@ -110,11 +110,17 @@ header {
 
 .sticky-s {
   position: sticky;
+  width: 60px;
+  margin-bottom: 2px;
   top: 90%;
 }
 
+.size{
+  width: 100vw;
+}
+
 .container-img {
-  max-width: 100%;
+  width: 100%;
   padding-bottom: 1px;
 }
 
@@ -152,6 +158,7 @@ header {
   object-fit: cover;
 }
 
+
 @media (max-width: 576px) {
 
   .carousel-image {
@@ -161,6 +168,11 @@ header {
   }
 }
 
-/* -------------------------------------------------------------------------- */
-/*                                   Carusel                                  */
-/* -------------------------------------------------------------------------- */
+@media only screen and (min-width: 1200px) {
+
+  .adjst{
+    
+    width: 65dvw;
+  }
+
+}
