@@ -31,11 +31,6 @@ p {
   font-size: 20px;
 }
 
-header,
-footer,
-main * {
-  color: #D3D8D4;
-}
 
 footer {
   background-color: #212529;
@@ -45,9 +40,13 @@ header {
   background-size: cover;
 }
 
+
+
 /* -------------------------------------------------------------------------- */
 /*                                 Clase FONT                                 */
 /* -------------------------------------------------------------------------- */
+
+
 .font-title {
   color: white;
   font-family: 'Playfair Display', serif;
@@ -71,9 +70,6 @@ header {
   font-family: 'Open Sans', sans-serif;
 }
 
-/* -------------------------------------------------------------------------- */
-/*                                 Clase FONT                                 */
-/* -------------------------------------------------------------------------- */
 
 .navbar-toggler:focus {
   box-shadow: none;
@@ -114,9 +110,10 @@ header {
   width: 60px;
   margin-bottom: 2px;
   top: 90%;
+  left: 12%;
 }
 
-.size{
+.size {
   width: 100vw;
 }
 
@@ -163,16 +160,29 @@ header {
 @media (max-width: 576px) {
 
   .carousel-image {
-
     width: 100%;
     object-fit: cover;
   }
 }
 
+.adjst {
+  width: 100dvw;
+}
+
+@media (min-width: 768px) {
+
+  .sticky-s {
+
+    left: 25%;
+
+  }
+
+}
+
 @media only screen and (min-width: 1200px) {
 
-  .adjst{
-    
+  .adjst {
+
     width: 65dvw;
   }
 
