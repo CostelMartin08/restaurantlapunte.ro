@@ -5,14 +5,11 @@
     --general-color: white;
   }
   .main-color{
-    background-color: var(--general-color);
+    background-color: var(--general-color)!important;
   }
 }
 
 body{
-  background-color: var(--general-color);
-}
-.main-color{
   background-color: var(--general-color);
 }
 
