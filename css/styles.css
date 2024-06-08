@@ -4,6 +4,9 @@
   :root {
     --general-color: white;
   }
+  .main-color{
+    background-color: var(--general-color);
+  }
 }
 
 body{
