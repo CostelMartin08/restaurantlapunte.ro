@@ -1,16 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Playfair+Display:wght@500&display=swap');
 
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: #FEFAF6;
+  --background-end-rgb: #FEFAF6;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
-    --general-color: white;
-  }
-  .main-color{
-    background-color: var(--general-color)!important;
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: #FEFAF6;
+    --background-end-rgb: #FEFAF6;
+
   }
 }
 
-body{
-  background-color: var(--general-color);
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
 ul {
