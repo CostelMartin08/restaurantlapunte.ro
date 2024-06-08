@@ -9,6 +9,9 @@
 body{
   background-color: var(--general-color);
 }
+.main-color{
+  background-color: var(--general-color);
+}
 
 ul {
   list-style: none;
