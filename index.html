@@ -1,9 +1,19 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>La Punte · Pizza &amp; Paste — Meniu</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Punte · Pizza &amp; Paste — Meniu</title>
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/85a489cc30.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/dark-mode.css">
+  <link rel="stylesheet" href="css/styles.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -145,6 +155,31 @@ footer .contact{margin-top:1.2rem;font-size:.8rem;color:var(--muted);letter-spac
 footer .contact a{color:var(--accent);text-decoration:none;font-weight:600}
 footer .url{margin-top:1.8rem;letter-spacing:.28em;font-size:.72rem;color:var(--accent)}
 
+/* ---------- QR VALORI NUTRITIONALE ---------- */
+.nutri{
+  max-width:var(--maxw);margin:3rem auto 0;padding:3rem 1.5rem;text-align:center;
+  border:1px solid var(--line);border-radius:6px;background:var(--panel);
+}
+.nutri h3{
+  font-family:'Fraunces',serif;font-variant:small-caps;letter-spacing:.05em;
+  font-size:1.7rem;color:var(--ink);margin-bottom:.6rem;
+}
+.nutri p{font-size:.85rem;color:var(--muted);margin-bottom:1.6rem}
+.nutri .qr{
+  display:inline-block;background:#fff;padding:14px;border-radius:8px;
+  box-shadow:0 6px 24px rgba(26,44,82,.15);line-height:0;
+  transition:transform .3s ease;
+}
+.nutri .qr:hover{transform:scale(1.03)}
+.nutri .qr img{width:200px;height:200px;display:block}
+.nutri .btn-nutri{
+  display:inline-flex;align-items:center;gap:.5rem;margin-top:1.6rem;
+  background:var(--ink);color:#fff;text-decoration:none;
+  padding:.7rem 1.5rem;border-radius:99px;font-size:.85rem;letter-spacing:.08em;
+  text-transform:uppercase;font-weight:500;transition:.25s;
+}
+.nutri .btn-nutri:hover{background:var(--accent)}
+
 /* reveal on scroll */
 .section{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
 .section.in{opacity:1;transform:none}
@@ -193,6 +228,7 @@ footer .url{margin-top:1.8rem;letter-spacing:.28em;font-size:.72rem;color:var(--
     <li><a href="#bere">Bere</a></li>
     <li><a href="#vinuri">Vinuri</a></li>
     <li><a href="#spirtoase">Spirtoase</a></li>
+    <li><a href="#valori-nutritionale">Valori Nutriționale</a></li>
   </ul>
 </nav>
 
@@ -439,6 +475,19 @@ footer .url{margin-top:1.8rem;letter-spacing:.28em;font-size:.72rem;color:var(--
 <div class="note">
   <strong>Alergeni &amp; produse congelate.</strong> Produsele care conțin ingrediente alergene sunt evidențiate prin <span style="text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:2px">subliniere</span>. Preparatele marcate cu <span class="snow">❄</span> conțin și produse congelate. Pentru verificarea valorilor nutritive complete și a listei detaliate de alergeni vă rugăm să solicitați meniul complet. În cazul în care suferiți de o alergie, vă rugăm să solicitați informații suplimentare înainte de a comanda.
 </div>
+
+<!-- ============ QR VALORI NUTRITIONALE ============ -->
+<section class="nutri" id="valori-nutritionale">
+  <h3>Valori Nutriționale</h3>
+  <p>Scanează codul QR pentru lista completă a valorilor nutriționale și a alergenilor.</p>
+  <a class="qr" href="https://restaurant-lapunte.ro/valoriNutritionale" target="_blank" rel="noopener" aria-label="Valori nutriționale">
+    <img src="img/valori.png" alt="Cod QR · Valori nutriționale La Punte">
+  </a>
+  <br>
+  <a class="btn-nutri" href="https://restaurant-lapunte.ro/valoriNutritionale" target="_blank" rel="noopener">
+    <i class="fa-solid fa-leaf"></i> Vezi valorile nutriționale
+  </a>
+</section>
 
 <!-- ============ FOOTER ============ -->
 <footer>
